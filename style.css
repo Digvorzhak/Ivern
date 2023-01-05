@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 62.5%; */
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background: rgb(11, 11, 37);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 70px;
+  align-items: center;
+}
+
+.navbar .main-list {
+  margin-top: 20px;
+  margin-right: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar > ul .top-list {
+  color: white;
+  margin-right: 40px;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 450px;
+  width: 164px;
+  min-height: 48px;
+  padding: 10px 41px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background: #0c5153;
+  color: #fff;
+}
+
+.benefits-list {
+  position: absolute;
+  top: 85px;
+  background: #fff;
+  color: #0c5153;
+  border-radius: 6px;
+  width: 300px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.benefits-list a {
+  color: #0c5153;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.benefits:hover .benefits-list {
+  visibility: visible;
+  opacity: 1;
+}
