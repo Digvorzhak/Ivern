@@ -33,6 +33,7 @@ body {
   font-family: "GilroyLight", sans-serif;
   font-weight: 500;
   line-height: 1.6;
+  font-weight: bold;
   /* background: rgb(11, 11, 37); */
 }
 
@@ -87,7 +88,7 @@ a {
   margin-right: 40px;
 }
 
-.btn {
+.get-started {
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -102,7 +103,7 @@ a {
   transition: color 0.2s, background-color 0.2s;
 }
 
-.btn:hover {
+.get-started:hover {
   background: #0c5153;
   color: #fff;
 }
@@ -123,7 +124,7 @@ a {
 }
 
 .benefits-list a {
-  color: #0c5153;
+  color: rgb(0, 63, 69);
   display: inline-block;
   margin-bottom: 30px;
 }
@@ -185,4 +186,65 @@ a {
   position: absolute;
   top: 450px;
   left: 845px;
+}
+
+.email-input {
+  height: 60px;
+  width: 323px;
+  border-radius: 6px;
+  /* border: solid 0.5px #fff; */
+  border: 1px solid hsla(0, 0%, 100%, 0.6);
+  background-color: RGBA(0, 0, 0, 0.7);
+  text-align: inherit;
+  padding: 20px;
+  font-family: "GilroyLight";
+  font-size: 18px;
+  color: #fff;
+}
+
+.email-input::placeholder {
+  font-family: "GilroyLight";
+  font-size: 18px;
+  font-weight: 400;
+  vertical-align: middle;
+
+  /* background: transparent; */
+  color: #fff;
+}
+
+.email-input:focus {
+  outline-style: solid;
+  /* border-color: blue; */
+}
+
+.get-card {
+  cursor: pointer;
+  position: absolute;
+  left: 795px;
+  top: 504px;
+  right: 450px;
+  width: 153px;
+  min-height: 60px;
+  padding-top: 17px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+  font-weight: 600;
+}
+
+.get-card:hover {
+  background: #0c5153;
+  color: #fff;
+}
+
+.mini-text {
+  color: #fff;
+  font-size: 10px;
+  line-height: 20px;
+  vertical-align: baseline;
+  margin-top: 24px;
+  font-weight: 500;
+  text-align: left;
 }
