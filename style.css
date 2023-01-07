@@ -222,8 +222,8 @@ a {
 
 .heading img {
   position: absolute;
-  top: 450px;
-  left: 845px;
+  top: 530px;
+  left: 545px;
 }
 
 .email-input {
@@ -259,7 +259,7 @@ a {
   cursor: pointer;
   position: absolute;
   left: 795px;
-  top: 504px;
+  top: 582px;
   right: 450px;
   width: 153px;
   min-height: 60px;
@@ -522,9 +522,81 @@ a {
   margin: 20px 0px;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 36px;
-    line-height: 10px;
+@media screen and (max-width: 390px) {
+  .navbar img {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+  }
+
+  .middle-section {
+    margin-left: 10px;
+  }
+
+  .middle-section h1 {
+    font-size: 30px;
+    width: 350px;
+  }
+  .get-card {
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 65px;
+    top: 700px;
+    right: 450px;
+    width: 253px;
+    min-height: 60px;
+    padding-top: 17px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: color 0.2s ease 0s, background-color 0.2s ease 0s;
+    font-weight: 600;
+  }
+
+  .heading img {
+    position: absolute;
+    top: 530px;
+    left: 545px;
+  }
+
+  .mini-text {
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    vertical-align: baseline;
+    margin-top: 24px;
+    font-weight: 500;
+    text-align: left;
+    font-size: inherit;
+    margin-right: 150px;
+    padding-right: 20px;
+  }
+
+  .main h1 {
+    /* font-family: "GilroyExtraBold"; */
+    margin-left: 10px;
+    font-size: 40px;
+    color: #0c5153;
+    line-height: normal;
+    font-weight: 800;
+  }
+  .main p {
+    margin-left: 0px;
+    font-size: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  .icons {
+    margin-top: 150px;
+    margin-right: 0px;
+  }
+
+  .info-icons {
+    margin-top: 0px;
   }
 }

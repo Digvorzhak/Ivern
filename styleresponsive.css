@@ -102,6 +102,8 @@ a {
   margin-right: 600px;
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: right;
 }
 
 .navbar > ul .top-list {
@@ -298,4 +300,21 @@ a {
 
 .bottom-logos > div {
   margin-left: 140px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .main-list {
+    flex: none;
+    width: 100%;
+    margin-right: 100px;
+  }
 }
